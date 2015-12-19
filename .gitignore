@@ -27,5 +27,8 @@
 *.out
 *.app
 
-#Project files
+#Platform specific project files
 project/*
+
+#Compiler output
+bin/*
