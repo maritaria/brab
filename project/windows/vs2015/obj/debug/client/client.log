@@ -1,0 +1,29 @@
+﻿Build started 19-12-2015 19:42:43.
+     1>Project "D:\Personal\Documents\Visual Studio 2015\Projects\GarrysMod\Master\project\windows\vs2015\client.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I..\..\..\include /ZI /nologo /W3 /WX- /Od /Oy- /D DEBUG /D CLIENT /D GMMODULE /D _WINDLL /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /arch:SSE /fp:fast /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"obj\debug\client\\" /Fd"obj\debug\client\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\..\include\GarrysMod\Lua\ILuaInterface.cpp
+         ILuaInterface.cpp
+       Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"..\..\..\bin\windows\debug\gmcl_FileSystem_win32.dll" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"..\..\..\bin\windows\debug\gmcl_FileSystem_win32.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"..\..\..\bin\windows\debug\gmcl_FileSystem_win32.lib" /MACHINE:X86 /INCREMENTAL:NO /DLL obj\debug\client\ILuaInterface.obj
+         obj\debug\client\ILuaModuleManager.obj
+         obj\debug\client\ILuaObject.obj
+         obj\debug\client\Execute.obj
+         obj\debug\client\ShellCommand.obj
+         obj\debug\client\ShellCommand_wrap.obj
+         obj\debug\client\ShellModule.obj
+         obj\debug\client\MyObject.obj
+         obj\debug\client\MyObject_wrap.obj
+         obj\debug\client\Main.obj
+         obj\debug\client\GarbageCollector.obj
+         obj\debug\client\LuaClass.obj
+         obj\debug\client\Module.obj
+         obj\debug\client\ModuleManager.obj
+         obj\debug\client\ServiceManager.obj
+     1>ILuaInterface.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/OPT:LBR' specification
+            Creating library ..\..\..\bin\windows\debug\gmcl_FileSystem_win32.lib and object ..\..\..\bin\windows\debug\gmcl_FileSystem_win32.exp
+         client.vcxproj -> D:\Personal\Documents\Visual Studio 2015\Projects\GarrysMod\Master\project\windows\vs2015\..\..\..\bin\windows\debug\gmcl_FileSystem_win32.dll
+     1>Done Building Project "D:\Personal\Documents\Visual Studio 2015\Projects\GarrysMod\Master\project\windows\vs2015\client.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.35

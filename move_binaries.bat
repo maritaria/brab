@@ -1,0 +1,1 @@
+copy /Y bin\windows\debug\* D:\SteamCMD\steamapps\common\GarrysModDS\garrysmod\lua\bin\

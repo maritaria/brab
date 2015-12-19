@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="debug|Win32">
+      <Configuration>debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="release|Win32">
+      <Configuration>release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9C76841B-8818-AFF1-71D3-C2455D143642}</ProjectGuid>
+    <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>server</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>..\..\..\bin\windows\debug\</OutDir>
+    <IntDir>obj\debug\server\</IntDir>
+    <TargetName>gmsv_FileSystem_win32</TargetName>
+    <TargetExt>.dll</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\..\..\bin\windows\release\</OutDir>
+    <IntDir>obj\release\server\</IntDir>
+    <TargetName>gmsv_FileSystem_win32</TargetName>
+    <TargetExt>.dll</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>DEBUG;SERVER;GMMODULE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>..\..\..\bin\windows\debug\gmsv_FileSystem_win32.lib</ImportLibrary>
+      <AdditionalOptions>/INCREMENTAL:NO %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>NDEBUG;RELEASE;SERVER;GMMODULE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ImportLibrary>..\..\..\bin\windows\release\gmsv_FileSystem_win32.lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\include\GarrysMod\Lua\ILuaBase.h" />
+    <ClInclude Include="..\..\..\include\GarrysMod\Lua\ILuaInterface.h" />
+    <ClInclude Include="..\..\..\include\GarrysMod\Lua\ILuaModuleManager.h" />
+    <ClInclude Include="..\..\..\include\GarrysMod\Lua\ILuaObject.h" />
+    <ClInclude Include="..\..\..\include\GarrysMod\Lua\ILuaTable.h" />
+    <ClInclude Include="..\..\..\include\GarrysMod\Lua\LuaFunction.h" />
+    <ClInclude Include="..\..\..\include\GarrysMod\Lua\LuaState.h" />
+    <ClInclude Include="..\..\..\include\GarrysMod\Lua\SpecialTable.h" />
+    <ClInclude Include="..\..\..\include\GarrysMod\Lua\Type.h" />
+    <ClInclude Include="..\..\..\include\GarrysMod\Lua\UserData.h" />
+    <ClInclude Include="..\..\..\source\CustomTypes.h" />
+    <ClInclude Include="..\..\..\source\Execute\Execute.h" />
+    <ClInclude Include="..\..\..\source\Execute\ShellCommand.h" />
+    <ClInclude Include="..\..\..\source\Execute\ShellModule.h" />
+    <ClInclude Include="..\..\..\source\Execute\ShellStatus.h" />
+    <ClInclude Include="..\..\..\source\FileSystem\MyObject.h" />
+    <ClInclude Include="..\..\..\source\System\Delegate.h" />
+    <ClInclude Include="..\..\..\source\System\GarbageCollector.h" />
+    <ClInclude Include="..\..\..\source\System\IService.h" />
+    <ClInclude Include="..\..\..\source\System\LuaClass.h" />
+    <ClInclude Include="..\..\..\source\System\Module.h" />
+    <ClInclude Include="..\..\..\source\System\ModuleManager.h" />
+    <ClInclude Include="..\..\..\source\System\ServiceManager.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\include\GarrysMod\Lua\ILuaInterface.cpp" />
+    <ClCompile Include="..\..\..\include\GarrysMod\Lua\ILuaModuleManager.cpp" />
+    <ClCompile Include="..\..\..\include\GarrysMod\Lua\ILuaObject.cpp" />
+    <ClCompile Include="..\..\..\source\Execute\Execute.cpp" />
+    <ClCompile Include="..\..\..\source\Execute\ShellCommand.cpp" />
+    <ClCompile Include="..\..\..\source\Execute\ShellCommand_wrap.cpp" />
+    <ClCompile Include="..\..\..\source\Execute\ShellModule.cpp" />
+    <ClCompile Include="..\..\..\source\FileSystem\MyObject.cpp" />
+    <ClCompile Include="..\..\..\source\FileSystem\MyObject_wrap.cpp" />
+    <ClCompile Include="..\..\..\source\Main.cpp" />
+    <ClCompile Include="..\..\..\source\System\GarbageCollector.cpp" />
+    <ClCompile Include="..\..\..\source\System\LuaClass.cpp" />
+    <ClCompile Include="..\..\..\source\System\Module.cpp" />
+    <ClCompile Include="..\..\..\source\System\ModuleManager.cpp" />
+    <ClCompile Include="..\..\..\source\System\ServiceManager.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

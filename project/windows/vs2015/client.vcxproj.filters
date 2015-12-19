@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{89AF369E-F58E-B539-FEA6-40106A051C9B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\GarrysMod">
+      <UniqueIdentifier>{D034C903-3C4B-C799-85C2-52BBF1179821}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\GarrysMod\Lua">
+      <UniqueIdentifier>{6135127C-CDA1-CD76-9695-65D402C1EFDE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{76FF3A1C-62A1-65F2-4B5C-7946379DEC42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\Execute">
+      <UniqueIdentifier>{B88BF59A-A459-E9A0-8DED-59C7795AC505}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\FileSystem">
+      <UniqueIdentifier>{CA8B08F1-36A2-0687-7F19-92A8EB6ED70E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\System">
+      <UniqueIdentifier>{CA31BA3C-36F2-3573-FF2C-7FF06BAC7A4F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\include\GarrysMod\Lua\ILuaBase.h">
+      <Filter>include\GarrysMod\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\GarrysMod\Lua\ILuaInterface.h">
+      <Filter>include\GarrysMod\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\GarrysMod\Lua\ILuaModuleManager.h">
+      <Filter>include\GarrysMod\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\GarrysMod\Lua\ILuaObject.h">
+      <Filter>include\GarrysMod\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\GarrysMod\Lua\ILuaTable.h">
+      <Filter>include\GarrysMod\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\GarrysMod\Lua\LuaFunction.h">
+      <Filter>include\GarrysMod\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\GarrysMod\Lua\LuaState.h">
+      <Filter>include\GarrysMod\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\GarrysMod\Lua\SpecialTable.h">
+      <Filter>include\GarrysMod\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\GarrysMod\Lua\Type.h">
+      <Filter>include\GarrysMod\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\GarrysMod\Lua\UserData.h">
+      <Filter>include\GarrysMod\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\CustomTypes.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\Execute\Execute.h">
+      <Filter>source\Execute</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\Execute\ShellCommand.h">
+      <Filter>source\Execute</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\Execute\ShellModule.h">
+      <Filter>source\Execute</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\Execute\ShellStatus.h">
+      <Filter>source\Execute</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\FileSystem\MyObject.h">
+      <Filter>source\FileSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\System\Delegate.h">
+      <Filter>source\System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\System\GarbageCollector.h">
+      <Filter>source\System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\System\IService.h">
+      <Filter>source\System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\System\LuaClass.h">
+      <Filter>source\System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\System\Module.h">
+      <Filter>source\System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\System\ModuleManager.h">
+      <Filter>source\System</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\source\System\ServiceManager.h">
+      <Filter>source\System</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\include\GarrysMod\Lua\ILuaInterface.cpp">
+      <Filter>include\GarrysMod\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\include\GarrysMod\Lua\ILuaModuleManager.cpp">
+      <Filter>include\GarrysMod\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\include\GarrysMod\Lua\ILuaObject.cpp">
+      <Filter>include\GarrysMod\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\Execute\Execute.cpp">
+      <Filter>source\Execute</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\Execute\ShellCommand.cpp">
+      <Filter>source\Execute</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\Execute\ShellCommand_wrap.cpp">
+      <Filter>source\Execute</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\Execute\ShellModule.cpp">
+      <Filter>source\Execute</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\FileSystem\MyObject.cpp">
+      <Filter>source\FileSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\FileSystem\MyObject_wrap.cpp">
+      <Filter>source\FileSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\Main.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\System\GarbageCollector.cpp">
+      <Filter>source\System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\System\LuaClass.cpp">
+      <Filter>source\System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\System\Module.cpp">
+      <Filter>source\System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\System\ModuleManager.cpp">
+      <Filter>source\System</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\source\System\ServiceManager.cpp">
+      <Filter>source\System</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
